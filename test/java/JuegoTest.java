@@ -16,8 +16,8 @@ public class JuegoTest {
         Casilla[][] board = new Casilla[3][3];
         Casilla occupiedSquare = mock(Casilla.class);
         when(occupiedSquare.isOccupied()).thenReturn(true);
-        for (int x = 0; x < 2; x++) {
-            for (int y = 0; y < 2; y++) {
+        for (int x = 0; x < 3; x++) {
+            for (int y = 0; y < 3; y++) {
                 board[x][y] = occupiedSquare;
             }
         }
