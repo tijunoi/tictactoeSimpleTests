@@ -58,7 +58,7 @@ public class Juego {
             fullLine = true;
             for (int y = 0; y < 3; y++) {
                 Posicion pos = new Posicion(x, y);
-                if(tablero.getCasilla(pos).getChip() == player.getChip()) {
+                if(tablero.getCasilla(pos).getChip() != player.getChip()) {
                     fullLine = false;
                 }
             }
@@ -75,7 +75,7 @@ public class Juego {
             fullColumn = true;
             for (int x = 0; x < 3; x++) {
                 Posicion pos = new Posicion(x, y);
-                if(tablero.getCasilla(pos).getChip() == player.getChip()) {
+                if(tablero.getCasilla(pos).getChip() != player.getChip()) {
                     fullColumn = false;
                 }
             }
